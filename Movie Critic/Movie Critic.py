@@ -47,7 +47,7 @@ def critique(score):
         return 'I don\'t have enough information to pass judgement'
     score = float(score)
     if score <= 4:
-        return 'Stay away from this \'film\''
+        return 'Stay away from this "film"'
     elif score > 4 and score <= 5.5:
         return 'Probably not worth watching'
     elif score > 5.5 and score <= 6.5:
