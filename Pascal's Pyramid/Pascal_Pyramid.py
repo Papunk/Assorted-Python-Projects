@@ -1,3 +1,6 @@
+# IDEA: Make it generate string polynomials
+# Oprimization: If we are only interested in the nth row, delete rows as you go
+
 def pascalPyramid(n = 1):
     pyramid = [[1]]
     for i in range(1, n):
