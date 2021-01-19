@@ -37,7 +37,8 @@ def updateGameState(matrix):
             cell = matrix[yCoord][xCoord]
             surroundingCellTally = 0
 
-                surroundingCellTally += 1 if matrix[yCoord - 1][xCoord] == ALIVE else 0
+            
+            surroundingCellTally += 1 if matrix[yCoord - 1][xCoord] == ALIVE else 0
             if yCoord != y - 1:
                 surroundingCellTally += 1 if matrix[yCoord + 1][xCoord] == ALIVE else 0
             if xCoord != 0:
