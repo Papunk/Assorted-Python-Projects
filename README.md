@@ -4,7 +4,7 @@
 
 The Python projects in this repo are small to medium programs that have been done used as testing grounds for new things I have learned. The purpose of this repo is to store and track my progress over time.
 
-## Project Log:
+## Project Index:
 
 - **Clock Visualizer:** This program takes in a time as input and generates an image of a 12-hour clock using the Turtle module.
 - **Conway's Game of Life:** This script creates successive generations based on the based on th rules to [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)

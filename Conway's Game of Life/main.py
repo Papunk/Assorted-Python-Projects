@@ -12,6 +12,8 @@ DEAD = "   "
 
 upperBound = 10
 
+# TODO: try an object oriented approach
+
 for i in range(y):
     row = []
     for j in range(x):
