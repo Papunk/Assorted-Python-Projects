@@ -29,7 +29,6 @@ class GameMatrix:
     matrix = []
 
     def __init__(self, ySize=0, xSize=0):
-        row = []
         self.ySize = ySize
         self.xSize = xSize
         for _ in range(ySize):
@@ -37,6 +36,12 @@ class GameMatrix:
             for _ in range(xSize):
                 row.append(Being())
             self.matrix.append(row)
+
+
+    def randomize(self, bound=10):
+        for row in self.matrix:
+            for being in row:
+                being.revive() if random.randint(0, bound) == 0 else being.kill()
 
 
 
@@ -89,5 +94,12 @@ class Game:
         return newMatrix
 
 
-    def run(self):
-        pass
+    def run(self, limit=100):
+        i = 0
+        while i < limit:
+            self.gameMatrix = self.updateState()
+            self.printState()
+
+            i += 1
+            time.sleep(.5)
+
