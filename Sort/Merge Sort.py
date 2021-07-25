@@ -7,7 +7,7 @@ def sort_two_lists(l1, l2):
             l2_ind += 1
         elif l2_ind == len(l2):
             new_list.append(l1[l1_ind])
-            l1_ind += 1
+            l1_ind += 1```
         else:
             l1_val = l1[l1_ind]
             l2_val = l2[l2_ind]

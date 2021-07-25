@@ -7,7 +7,7 @@ class Being:
     ALIVE = " ⬢ "
     DEAD = "   "
 
-    def __init__(self, kind=Being.DEAD):
+    def __init__(self, kind=DEAD):
         self.kind = kind
 
     def isDead(self):
@@ -47,11 +47,13 @@ class GameMatrix:
 
 class Game:
     
-    def __init__(self, ySize=0, xSize=0):
-        self.gameMatrix = GameMatrix(ySize, xSize)
+    def __init__(self, gameMatrix):
+        self.gameMatrix = gameMatrix
         
 
     def printState(self):
+        print(len(self.gameMatrix))
+        exit()
         for row in self.gameMatrix.matrix:
             for cell in row:
                 print(cell.kind, end="")
@@ -103,3 +105,11 @@ class Game:
             i += 1
             time.sleep(.5)
 
+
+# Implementation
+
+matrix = GameMatrix(50, 50)
+matrix.randomize
+
+game = Game(matrix)
+game.run()

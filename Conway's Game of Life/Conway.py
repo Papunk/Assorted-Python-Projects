@@ -24,7 +24,7 @@ for i in range(y):
     gameMatrix.append(row)
 
 def printGameState(matrix):
-    print("\n" * 10)
+    print("\n" * 10)  
     for row in matrix:
         for cell in row:
             print(cell, end="")
